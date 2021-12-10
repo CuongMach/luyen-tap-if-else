@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>if else</title>
+</head>
+<body>
+<input id="number" placeholder="nhập số" type="text">
+<button onclick="isEvenNumber()">Kiểm tra</button>
+<p id="result"></p>
+<script>
+    function isEvenNumber() {
+        let number = parseInt(document.getElementById("number").value);
+        let result = document.getElementById("result");
+        let isEven = number % 2 === 0;
+        if (isEven === true) {
+            result.innerHTML = number + " là số chẵn";
+        } else {
+            result.innerHTML = number + " là số lẻ";
+        }
+    }
+</body>
+</html>
